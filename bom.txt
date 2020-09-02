@@ -1,0 +1,21 @@
+Comment	Description	Designator	Footprint
+
+
+10K		R2, R4, R6, R8, R9, R10	0805	
+20K		R7	0805
+30K		R5	0805
+40K2	R3	0805
+4K7		R0	0805
+51K		R1	0805
+REF194	UREF	REF194
+PIC18F25K80		MCU	QFN-ML28_N
+Header 7	Header, 7-Pin	JST B7B-XH-A(LF)(SN)	
+Header 6	Header, 6-Pin	JST B6B-XH-A(LF)(SN)
+Header 5	Header, 5-Pin	JST B5B-XH-A(LF)(SN)
+Header 4	Header, 4-Pin	JST B4B-XH-A(LF)(SN)
+Header 3	Header, 3-Pin	JST B3B-XH-A(LF)(SN)
+Header 2	Header, 2-Pin	STRIP 2.54	
+FT230X		U2	FTDI FT230X	
+CON5	USB	microusb	AMPHENOL FCI 10104111-0001LF
+100nF	C1, C2	0805
+1uF		C3	0805
