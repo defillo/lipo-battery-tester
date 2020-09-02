@@ -16,10 +16,14 @@ Calibration:
 theres a TP point with 4.500 V output
 
 Use a short wire and start connecting the 6S pole to this TP
-Connect to the board with a PC or android device, set baudrate to 19200
+Connect to the board with a PC or android device, set baudrate to 57600
 
-After connecting the 6S wire to the TP, send C6 <enter> to the board. Calibration of 6S resistor ladder will be stored in flash
-proceed with 5S sending C5, then 4S with C4 always connecting the relevant pin to TP
+After connecting the 1S wire to the TP, send C:1 <enter> to the board. Calibration of 1S resistor ladder will be stored in flash
+proceed with 2S sending C:2, then 3S with C:3 always connecting the relevant pin to TP and so on up to C:6
+
+You will read a reply with the relevant ratio factor in the end. value must be closer to the number of cells
+Example. calibrating 4S  will report a factor around 4 and so on
+
 
 Calibration is stored in the MCU flash so no need to do it again unless you flash the board again
 That case is better to preserve EEPROM area in MPLABX IPE
