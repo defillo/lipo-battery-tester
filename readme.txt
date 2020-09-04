@@ -54,3 +54,6 @@ The app will immediately show the
 If you prefere to have the board already mounted and running, please ask by mail to
 defilippis1962@gmail.com
 
+
+In any case, there will be NO responsability of the author for any damage that may occur under any circumstances to any object that can be related to this project
+
