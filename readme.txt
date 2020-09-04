@@ -1,3 +1,7 @@
+License. this project is distributed free for personal use. Yhis means that you can produce your own unit(s) but you are not allowed to make a commercial use of this item
+If you want to produce and sell the units, please contact the developer at  defilippi1962@gmail.com
+
+
 Assemly is not difficult. care must be taken in welding MCU and FTDI chip
 For MCU, use hotair if available
 
@@ -13,7 +17,16 @@ FTProg is used to program the FTDI chip with the String descriptor you like.
 device vendor and ID are the standard ones, do not change them otherwise the Android app will not open automatically 
 
 Calibration:
-theres a TP point with 4.500 V output
+Connect to the board with a PC or android device with a serial emulator (for pc, you might need to install ftdi drivers), set baudrate to 57600
+
+Usually the reference voltage value will be 4.500 volt as stated by the Analog Devices datasheet, for what concerns REF194
+If you have a very good instrument and you want to deep calibrate the system, check the voltage at pin TP and take note of the value
+now multiply by 100 and set as an INT (example: reading is 4.5231, * 100 = 452.31 , set to INT and you get 452)
+then send the command V:452 check for the confirm and that's all. 
+Firmware defaults to 4.50 if no voltage calibration is issued
+
+
+using the   TP point with 4.500 V output
 
 Use a short wire and start connecting the 6S pole to this TP
 Connect to the board with a PC or android device, set baudrate to 57600
@@ -39,5 +52,5 @@ The app will immediately show the
 6) The deviation of the voltage of the cell on respect of the mean value. shown in millivolts
 
 If you prefere to have the board already mounted and running, please ask by mail to
-assistenza@androidefillo.it
+defilippis1962@gmail.com
 
